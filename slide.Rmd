@@ -332,7 +332,7 @@ dat <- readxl::read_excel("sample.xlsx", sheet = "シート名")
 ```
 
 # その他の拡張子
-## SAS(.sas7bdat), STATA(.dta), SPSS(.sav)形式のファイル
+## SAS(.sas7bdat), STATA(.dta), SPSS(.sav)形式
 **haven** パッケージで読み込み
 
 #### SAS
