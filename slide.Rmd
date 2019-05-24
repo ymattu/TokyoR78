@@ -216,7 +216,7 @@ dat <- fread("sample.csv", data.table = FALSE)
 
 <div class="column2">
 ### 検証環境
-- macOS Mojave 10.13.2
+- macOS Mojave 10.14.5
 - Corei7
 - メモリ 16GB
 - R 3.6.0

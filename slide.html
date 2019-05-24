@@ -584,8 +584,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section></section>
 <section><section id="r-" class="title-slide slide level1"><h1>さあ、R でデータ分析だ!</h1></section><section class="slide level2">
 <h2>データ分析の(おおまかな)流れ</h2>
-<div id="htmlwidget-3bfab69a5ee7ebf71763" style="width:800px;height:400px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3bfab69a5ee7ebf71763">{"x":{"diagram":"\ndigraph data_analytics {\n\n      # graph\n      graph [overlap = true, fontsize = 10]\n\n      # node\n      node [shape=box,\n      fontname = Helvetica,\n      style = filled,\n      fillcolor = SteelBlue,\n      fontcolor = white]\n      データ読み込み;\n\n      node [shape = box,\n      fontname = Helvetica,\n      fillcolor = Gray,\n      fontcolor = black]\n      可視化・モデリング; 前処理;\n\n      # edge\n      データ読み込み->前処理\n      前処理->可視化・モデリング\n      }\n      ","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e170edb1014967dd291b" style="width:800px;height:400px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e170edb1014967dd291b">{"x":{"diagram":"\ndigraph data_analytics {\n\n      # graph\n      graph [overlap = true, fontsize = 10]\n\n      # node\n      node [shape=box,\n      fontname = Helvetica,\n      style = filled,\n      fillcolor = SteelBlue,\n      fontcolor = white]\n      データ読み込み;\n\n      node [shape = box,\n      fontname = Helvetica,\n      fillcolor = Gray,\n      fontcolor = black]\n      可視化・モデリング; 前処理;\n\n      # edge\n      データ読み込み->前処理\n      前処理->可視化・モデリング\n      }\n      ","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="-" class="slide level2">
 <h2>まずは何よりも、 <br> 「<strong>データの読み込み</strong>」ですよね</h2>
 <p>R で分析するためには、データを R に読み込まなければなりません。</p>
@@ -690,7 +690,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <div class="column2">
 <h3>検証環境</h3>
 <ul>
-<li>macOS Mojave 10.13.2</li>
+<li>macOS Mojave 10.14.5</li>
 <li>Corei7</li>
 <li>メモリ 16GB</li>
 <li>R 3.6.0</li>
@@ -700,13 +700,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h2>時間を計測</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">system.time</span>(dat &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/Sales.csv&quot;</span>))</a></code></pre></div>
 <pre><code>   user  system elapsed 
-  3.194   0.101   3.331 </code></pre>
+  3.726   0.122   4.128 </code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">system.time</span>(dat2 &lt;-<span class="st"> </span>readr<span class="op">::</span><span class="kw">read_csv</span>(<span class="st">&quot;data/Sales.csv&quot;</span>))</a></code></pre></div>
 <pre><code>   user  system elapsed 
-  0.814   0.032   0.856 </code></pre>
+  0.883   0.037   0.952 </code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">system.time</span>(dat3 &lt;-<span class="st"> </span>data.table<span class="op">::</span><span class="kw">fread</span>(<span class="st">&quot;data/Sales.csv&quot;</span>))</a></code></pre></div>
 <pre><code>   user  system elapsed 
-  1.221   0.023   0.673 </code></pre>
+  1.189   0.024   0.659 </code></pre>
 </section><section class="slide level2">
 <h2>もっとちゃんと時間を知りたい</h2>
 <ul>
