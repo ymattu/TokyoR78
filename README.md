@@ -1,1 +1,1 @@
-スライドは[こちら](https://ymattu.github.io/TokyoR73/slide.html#/)
+スライドは[こちら](https://ymattu.github.io/TokyoR78/slide.html#/)
