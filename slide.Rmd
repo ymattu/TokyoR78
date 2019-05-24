@@ -87,7 +87,7 @@ options(dplyr.print_max = 1e9)
 
 # さあ、R でデータ分析だ!
 ## データ分析の(おおまかな)流れ
-<div class="column1">
+
 ```{r echo=FALSE}
 library(DiagrammeR)
 
@@ -117,11 +117,7 @@ digraph data_analytics {
       }
       ")
 ```
-</div>
 
-<div class="column2">
-今日のお話はここ
-</br>
 
 ## まずは何よりも、 <br> 「**データの読み込み**」ですよね
 R で分析するためには、データを R に読み込まなければなりません。
