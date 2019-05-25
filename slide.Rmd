@@ -186,7 +186,7 @@ dat <- read.csv("sample.csv", stringsAsFactors = FALSE)
 ```
 
 ## `readr::read_csv()`
-- 高速で、列の方をいい感じにやってくれる(オススメ)
+- 高速で、列の型をいい感じにやってくれる(オススメ)
 ```{r eval=FALSE}
 library(readr)
 dat <- read_csv("sample.csv")
